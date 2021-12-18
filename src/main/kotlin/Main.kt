@@ -37,7 +37,7 @@ fun main() {
             else -> {
                 println(
                     "${input[0]} no such command\n" +
-                            "   pls repeat"
+                            "   use help to find out"
                 )
                 continue
             }
@@ -46,7 +46,10 @@ fun main() {
 }
 
 fun helpCommand(commandList: MutableList<String>) {
-    println("Мне лень сейчас это делать((")
+    println("pwd - выводит полный путь до текущей дериктории\n" +
+            "ls - выводит список файлов в директории\n" +
+            "cd - изменяет текущую рабочую директорию\n" +
+            "cat - выводит содержимое файла")
 }
 
 fun openZipCommand(commandList: MutableList<String>) {
